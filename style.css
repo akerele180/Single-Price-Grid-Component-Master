@@ -15,7 +15,7 @@ body {
     grid-template-rows: repeat(2 280px);
     max-width: 745px;
     margin: 54px auto;
-    box-shadow: 0 0 11px 0px #93c0dcb0;
+    box-shadow: 0 0 11px 0px #434e55b0;
 }
 .grid {
     display: grid;
@@ -78,4 +78,56 @@ p.sign {
 }
 footer {
     display: none;
+}
+@media only screen and (max-width: 425px){
+    body {
+        display: grid;
+        padding: 5px;
+        font-size: 12px;
+    }
+    .grid {
+        display: contents;
+    }
+    #soft {
+        margin: -8px auto 13px;
+    }
+    div.box1 {
+        padding: 10px;
+        letter-spacing: 0;
+    }
+    div.box1-body {
+        margin-left: 14px;
+        padding: 4px;
+    }
+    div.box2 {
+        border-bottom-left-radius: 0;
+    }
+    div.box3 {
+        padding: 8px 0;
+    }
+    .merge{
+        height: 30px;
+    }
+    div.box3-body {
+        margin: 22px auto 21px
+    }
+}
+@media only screen and (max-width: 320px) {
+    .box2-body, .box3-body {
+        padding: 0 27px;
+    }
+    body {
+        padding: 0 10px;
+    }
+    div.box1 {
+        width: 286px;
+    }
+    .container, .box2, .box3 {
+        width: 286px;
+    }
+    p.sign {
+        margin: 40px 15px;
+        position: relative;
+        right: 15px
+    }
 }
